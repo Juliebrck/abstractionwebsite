@@ -1,15 +1,196 @@
+* {
+  margin: 0;
+  outline: 0;
+}
+#root {
+  background: #1b1a18;
+  color: #000;
+}
+
 .App {
+  margin-top: 0;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  background-color: #1b1a18;
+  color: #fffef2;
+  font-family: Beau, Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.all {
+  height: 100%;
+  width: 100vw;
+  background-color: #1b1a18;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b1a18;
+}
+
+.homescreen {
+  height: 90vh;
+  width: 95vw;
+  border: 0.5px solid #fffef2;
+  position: relative;
+  z-index: 2;
+}
+
+.abstraction {
+  width: 25vw;
+  font-size: 36px;
+  color: #fffef2;
+  font-family: Beau, Roboto, sans-serif;
+  text-align: center;
+  position: absolute;
+  margin-left: 35px;
+  margin-top: -18px;
+  letter-spacing: 2px;
+  z-index: 100;
+}
+
+.paris {
+  width: 10vw;
+  font-size: 26px;
+  position: fixed;
+  color: #fffef2;
+  font-family: Beau, Roboto, sans-serif;
+  bottom: 0;
+  margin-bottom: 14px;
+  margin-left: 80vw;
+  letter-spacing: 2px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.textcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.number {
+  font-size: 45px;
+  text-align: start;
+  font-style: italic;
+  font-family: Beau, Roboto, sans-serif;
+}
+
+.title {
+  text-align: start;
+  font-family: Avenir Next Condensed;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 49px;
+}
+
+.corpstext {
+  font-family: Avenir Next Condensed;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: justify;
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+  margin-top: 5vh;
+}
+
+.simpletext {
+  font-family: Avenir Next Condensed;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 15px;
+  text-align: justify;
+  letter-spacing: 0.04em;
+}
+
+.simpletexttransparent {
+  font-family: Avenir Next Condensed;
+  color: #1b1a18;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 15px;
+  text-align: justify;
+  letter-spacing: 0.04em;
+}
+
+.calendlybutton {
+  padding: 6px 15px 6px 15px;
+  background-color: #fffef2;
+  border-radius: 40px;
+  color: black;
+  font-family: Avenir Next Condensed;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+.calendlybutton:hover {
+  font-style: normal;
+  color: black;
+  text-decoration: none;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 60vh;
+}
+
+.header {
+  position: fixed;
+  width: 95vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo1 {
+  margin-top: 50px;
+  position: absolute;
+  align-items: center;
+  z-index: 2;
+}
+
+.logo1:hover {
+  opacity: 0.1;
+  margin-top: 50px;
+  position: absolute;
+  align-items: center;
+  z-index: 2;
+}
+
+.logo2 {
+  margin-top: 110px;
+  position: relative;
+  align-items: center;
+  z-index: 1;
+}
+
+.logo3 {
+  margin-top: 40px;
+  margin-bottom: -20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .logo3 {
+    margin-top: 50px;
+    margin-bottom: -10px;
+    z-index: 100;
+  }
+  .logo1 {
+    margin-top: 50px;
+    width: 50%;
+    position: absolute;
+    align-items: center;
+    z-index: 2;
   }
 }
 
@@ -24,15 +205,17 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.modal {
+  position: fixed;
+  width: 600px;
+  top: 40px;
+  left: calc(50% - 300px);
+  bottom: 40px;
+  z-index: 100;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
