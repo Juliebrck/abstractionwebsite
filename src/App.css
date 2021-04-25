@@ -211,6 +211,13 @@
   z-index: 100;
 }
 
+.customModal {
+  background: #b2dbbf;
+  max-width: 90vw;
+  width: 90vw;
+  border-radius: 4;
+}
+
 .row {
   display: flex;
   justify-content: center;
