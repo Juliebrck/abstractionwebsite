@@ -39,7 +39,7 @@ function HomeScreen() {
     //border: "0.5px solid #fffef2",
   };
   var card = {
-    height: "70vh",
+    height: "75vh",
     color: "#fffef2",
     border: "none",
     backgroundColor: "#1b1a18",
