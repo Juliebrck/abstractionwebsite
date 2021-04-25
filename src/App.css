@@ -101,7 +101,6 @@
   line-height: 25px;
   text-align: justify;
   letter-spacing: 0.04em;
-  margin-bottom: 20px;
   margin-top: 5vh;
 }
 
@@ -212,7 +211,10 @@
 }
 
 .customModal {
-  background: #b2dbbf;
+  display: flex;
+  justify-content: center;
+  background: #fffef2;
+  border: 1px;
   max-width: 90vw;
   width: 90vw;
   border-radius: 4;
