@@ -161,7 +161,7 @@ function HomeScreen() {
                   Gardez le contact avec l’équipe d’Abstraction Paris pour
                   recevoir des informations sur les matières premières, au fil
                   des récoltes, sur le lancement de nos parfums et des
-                  évènements dans la boutique. <br></br>
+                  évènements dans la boutique <br></br>
                   <br></br>A bientôt !
                 </p>
               </CardBody>
