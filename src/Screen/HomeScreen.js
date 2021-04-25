@@ -39,7 +39,7 @@ function HomeScreen() {
     //border: "0.5px solid #fffef2",
   };
   var card = {
-    height: "70vh",
+    height: "60vh",
     color: "#fffef2",
     border: "none",
     backgroundColor: "#1b1a18",
@@ -77,7 +77,7 @@ function HomeScreen() {
       />
       <Container style={container}>
         <Row className="row">
-          <Col style={movieMargin} xs="10" lg="5" xl="4">
+          <Col style={movieMargin} xs="11" lg="5" xl="4">
             <Card style={card}>
               <CardBody>
                 <span class="number">01. </span>
@@ -107,7 +107,7 @@ function HomeScreen() {
               </CardFooter>
             </Card>
           </Col>
-          <Col style={movieMargin} xs="10" lg="5" xl="4">
+          <Col style={movieMargin} xs="11" lg="5" xl="4">
             <Card style={card}>
               <CardBody>
                 <span class="number">02. </span>
@@ -187,7 +187,7 @@ function HomeScreen() {
             </MapContainer>
           </Modal> */}
 
-          <Col style={movieMargin} xs="10" lg="5" xl="4">
+          <Col style={movieMargin} xs="11" lg="5" xl="4">
             <Card style={card}>
               <CardBody>
                 <span class="number">03. </span>
