@@ -44,6 +44,10 @@ function HomeScreen() {
     backgroundColor: "#1b1a18",
     border: "#1b1a18",
   };
+  var cardbody = {
+    paddingBottom: 0,
+    height: "50vh",
+  };
 
   const skater = new Icon({
     iconUrl: "./logominres.png",
@@ -63,7 +67,7 @@ function HomeScreen() {
         <Row className="row">
           <Col style={movieMargin} xs="11" lg="5" xl="4">
             <Card style={card}>
-              <CardBody>
+              <CardBody style={cardbody}>
                 <span class="number">01. </span>
                 <span class="title">S'inscrire à un atelier </span>
                 <p class="corpstext">
@@ -93,11 +97,11 @@ function HomeScreen() {
           </Col>
           <Col style={movieMargin} xs="11" lg="5" xl="4">
             <Card style={card}>
-              <CardBody>
+              <CardBody style={cardbody}>
                 <span class="number">02. </span>
                 <span class="title">Nous découvrir</span>
                 <p class="corpstext">
-                  <strong>ABSTRACTION Paris</strong>
+                  <strong>Abstraction Paris</strong>
                 </p>
                 <p class="simpletext">22 rue Houdon, 75018 Paris</p>
                 <p class="simpletext">Tél.: 06.13.05.14.67</p>
@@ -149,7 +153,7 @@ function HomeScreen() {
 
           <Col style={movieMargin} xs="11" lg="5" xl="4">
             <Card style={card}>
-              <CardBody>
+              <CardBody style={cardbody}>
                 <span class="number">03. </span>
                 <span class="title">Rester curieux</span>
                 <p class="corpstext">

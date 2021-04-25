@@ -147,23 +147,14 @@
   height: 60vh;
 }
 
-.header {
-  position: fixed;
-  width: 95vw;
-  height: 10vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .logo1 {
-  position: fixed;
+  position: absolute;
   z-index: 2;
 }
 
 .logo1:hover {
   opacity: 0.1;
-  position: fixed;
+  position: absolute;
   z-index: 2;
 }
 
@@ -175,17 +166,6 @@
 .logo3 {
   margin-top: 40px;
   margin-bottom: -20px;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .modal {
