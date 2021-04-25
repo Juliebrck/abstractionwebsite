@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
-import { Container } from "reactstrap";
 import HomeScreen from "./HomeScreen";
 import WelcomeScreen from "./WelcomeScreen";
 

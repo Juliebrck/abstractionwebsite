@@ -16,10 +16,6 @@ import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 
 function HomeScreen() {
-  //   const [modal, setModal] = useState(false);
-
-  //   const toggle = () => setModal(!modal);
-
   const [open, setOpen] = useState(false);
 
   const onOpenModal = () => setOpen(true);
@@ -35,8 +31,6 @@ function HomeScreen() {
     maxWidth: "95vw",
     marginTop: "5vh",
     backgroundColor: "#1b1a18",
-
-    //border: "0.5px solid #fffef2",
   };
   var card = {
     height: "75vh",
@@ -49,16 +43,6 @@ function HomeScreen() {
     justifyContent: "flex-end",
     backgroundColor: "#1b1a18",
     border: "#1b1a18",
-  };
-  var modalstyle = {
-    color: "#fffef2",
-    display: "flex",
-    justifyContent: "center",
-    marginTop: "20vh",
-    border: "0.5px solid #fffef2",
-    borderRadius: 10,
-    padding: "10px",
-    width: "80vw",
   };
 
   const skater = new Icon({
@@ -162,30 +146,6 @@ function HomeScreen() {
               ></Marker>
             </MapContainer>
           </Modal>
-
-          {/* <Modal isOpen={modal} toggle={toggle} style={modalstyle}>
-            <MapContainer
-              center={[48.8868058, 2.3430153]}
-              zoom={14}
-              scrollWheelZoom={false}
-            >
-              <TileLayer
-                attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              />
-              <link
-                rel="stylesheet"
-                href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-                integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-                crossorigin=""
-              />
-              <Marker
-                style={{ fillrColor: "transparent" }}
-                icon={skater}
-                position={[48.8838213, 2.3390914]}
-              ></Marker>
-            </MapContainer>
-          </Modal> */}
 
           <Col style={movieMargin} xs="11" lg="5" xl="4">
             <Card style={card}>
