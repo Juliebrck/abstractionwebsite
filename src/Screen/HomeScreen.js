@@ -82,7 +82,7 @@ function HomeScreen() {
                   l'univers des parfums. Après une revue de l'histoire de la
                   parfumerie, vous découvrirez les dessous de son industrie en
                   terminant par une introduction aux matières premières qui
-                  composent la palette du parfumeur.{" "}
+                  composent la palette du parfumeur{" "}
                 </p>
               </CardBody>
               <CardFooter style={button}>
@@ -172,6 +172,9 @@ function HomeScreen() {
               </CardFooter>
             </Card>
           </Col>
+        </Row>
+        <Row>
+          <p class="corpstext">22 rue Houdon, 75018 Paris</p>
         </Row>
       </Container>
     </div>
