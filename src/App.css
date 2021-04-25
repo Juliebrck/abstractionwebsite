@@ -7,6 +7,11 @@
   color: #000;
 }
 
+.container-fluid {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .App {
   margin-top: 0;
   height: 100vh;
@@ -173,17 +178,15 @@
   margin-bottom: -20px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
   .logo3 {
     margin-top: 50px;
     margin-bottom: -10px;
     z-index: 100;
   }
   .logo1 {
-    margin-top: 50px;
     width: 50%;
-    position: absolute;
-    align-items: center;
+    position: fixed;
     z-index: 2;
   }
 }

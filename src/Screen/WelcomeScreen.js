@@ -13,7 +13,12 @@ function WelcomeScreen(props) {
   return (
     <Container
       fluid
-      style={{ paddingLeft: "0px", paddingRight: "0px" }}
+      style={{
+        paddingLeft: "0px",
+        paddingRight: "0px",
+        marginLeft: 0,
+        marginRight: 0,
+      }}
       className="App"
     >
       <img

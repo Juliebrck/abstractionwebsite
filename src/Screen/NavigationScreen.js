@@ -12,10 +12,10 @@ function NavigationScreen(props) {
   }, [props.CounterStep]);
 
   return (
-    <Container style={{ flex: 1 }}>
+    <div style={{ flex: 1, marginRight: 0, marginLeft: 0, width: "100vw" }}>
       {step === 0 && <WelcomeScreen />}
       {step === 1 && <HomeScreen />}
-    </Container>
+    </div>
   );
 }
 
