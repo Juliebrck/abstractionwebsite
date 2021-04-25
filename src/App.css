@@ -16,7 +16,6 @@
   color: #fffef2;
   font-family: Beau, Roboto, sans-serif;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -154,24 +153,18 @@
 }
 
 .logo1 {
-  margin-top: 50px;
-  position: absolute;
-  align-items: center;
+  position: fixed;
   z-index: 2;
 }
 
 .logo1:hover {
   opacity: 0.1;
-  margin-top: 50px;
-  position: absolute;
-  align-items: center;
+  position: fixed;
   z-index: 2;
 }
 
 .logo2 {
-  margin-top: 110px;
   position: relative;
-  align-items: center;
   z-index: 1;
 }
 
