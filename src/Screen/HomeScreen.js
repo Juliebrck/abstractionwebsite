@@ -33,7 +33,7 @@ function HomeScreen() {
     backgroundColor: "#1b1a18",
   };
   var card = {
-    height: "75vh",
+    height: "80vh",
     color: "#fffef2",
     border: "none",
     backgroundColor: "#1b1a18",
@@ -105,6 +105,7 @@ function HomeScreen() {
                 </p>
                 <p class="simpletext">22 rue Houdon, 75018 Paris</p>
                 <p class="simpletext">Tél.: 06.13.05.14.67</p>
+                <p class="simpletexttransparent">.</p>
                 <p class="simpletext">contact@abstractionparis.com</p>
                 <p class="simpletext">@abstractionparis</p>
               </CardBody>
@@ -160,7 +161,8 @@ function HomeScreen() {
                   Gardez le contact avec l’équipe d’Abstraction Paris pour
                   recevoir des informations sur les matières premières, au fil
                   des récoltes, sur le lancement de nos parfums et des
-                  évènements dans la boutique
+                  évènements dans la boutique. <br></br>
+                  <br></br>A bientôt !
                 </p>
               </CardBody>
               <CardFooter style={button}>

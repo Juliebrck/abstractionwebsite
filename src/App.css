@@ -148,18 +148,18 @@
 }
 
 .logo1 {
-  position: absolute;
+  position: fixed;
   z-index: 2;
 }
 
 .logo1:hover {
   opacity: 0.1;
-  position: absolute;
+  position: fixed;
   z-index: 2;
 }
 
 .logo2 {
-  position: relative;
+  position: fixed;
   z-index: 1;
 }
 
