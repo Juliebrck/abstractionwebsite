@@ -71,7 +71,18 @@ function HomeScreen() {
           <Card style={card}>
             <CardBody style={cardbody}>
               <span class="number">01. </span>
-              <span class="title">S'inscrire à un atelier </span>
+              <Link
+                class="titlelink"
+                href="#"
+                onClick={() =>
+                  window.Calendly.initPopupWidget({
+                    url:
+                      "https://calendly.com/abstractionparis/atelierdecouverte?background_color=fffff2&text_color=1b1a18&primary_color=1b1a18",
+                  })
+                }
+              >
+                <span class="title">S'inscrire à un atelier </span>
+              </Link>
               <p class="corpstext">
                 <strong>Abstraction Paris</strong> vous propose, à travers des
                 ateliers sur les matières premières, de vous initier à l'univers
@@ -101,14 +112,22 @@ function HomeScreen() {
           <Card style={card}>
             <CardBody style={cardbody}>
               <span class="number">02. </span>
-              <span class="title">Nous découvrir</span>
+              <Link class="titlelink">
+                <span class="title" onClick={onOpenModal}>
+                  Nous découvrir
+                </span>
+              </Link>
               <p class="corpstext">
                 <strong>Abstraction Paris</strong>
               </p>
               <p class="simpletext">22 rue Houdon, 75018 Paris</p>
               <p class="simpletext">Tél.: 06.13.05.14.67</p>
               <p class="simpletexttransparent">.</p>
-              <p class="simpletext">contact@abstractionparis.com</p>
+              <p class="simpletext">
+                <a class="lien" href="mailto:contact@abstractionparis.com">
+                  contact@abstractionparis.com
+                </a>
+              </p>
               <p class="simpletext">@abstractionparis</p>
               <CardFooter style={button}>
                 <button
@@ -158,7 +177,12 @@ function HomeScreen() {
           <Card style={card}>
             <CardBody style={cardbody}>
               <span class="number">03. </span>
-              <span class="title">Rester curieux</span>
+              <Link
+                href="mailto:contact@abstractionparis.com"
+                class="titlelink"
+              >
+                <span class="title">Rester curieux</span>
+              </Link>
               <p class="corpstext">
                 Vous aimeriez en savoir plus? Gardez le contact avec l’équipe d’
                 <strong>Abstraction Paris</strong> pour recevoir chaque mois des
@@ -168,12 +192,14 @@ function HomeScreen() {
                 <br></br>A bientôt !
               </p>
               <CardFooter style={button}>
-                <button
-                  class="calendlybutton"
-                  style={{ marginTop: 0, border: "none" }}
-                >
-                  Garder le contact
-                </button>
+                <a href="mailto:contact@abstractionparis.com">
+                  <button
+                    class="calendlybutton"
+                    style={{ marginTop: 0, border: "none" }}
+                  >
+                    Garder le contact
+                  </button>
+                </a>
               </CardFooter>
             </CardBody>
           </Card>
