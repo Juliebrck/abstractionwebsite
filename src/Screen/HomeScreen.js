@@ -32,7 +32,7 @@ function HomeScreen() {
     backgroundColor: "#1b1a18",
   };
   var card = {
-    height: "68vh",
+    height: "75vh",
     color: "#fffef2",
     border: "none",
     backgroundColor: "#1b1a18",
@@ -73,12 +73,12 @@ function HomeScreen() {
               <span class="number">01. </span>
               <span class="title">S'inscrire à un atelier </span>
               <p class="corpstext">
-                <strong>Abstraction Paris</strong>, à travers des ateliers sur
-                les matières premières, vous propose de vous initier à l'univers
+                <strong>Abstraction Paris</strong> vous propose, à travers des
+                ateliers sur les matières premières, de vous initier à l'univers
                 des parfums. Après une revue de l'histoire de la parfumerie,
                 vous découvrirez les dessous de son industrie en terminant par
                 une introduction aux matières premières qui composent la palette
-                du parfumeur{" "}
+                du parfumeur.{" "}
               </p>
               <CardFooter style={button}>
                 <Link
@@ -87,7 +87,7 @@ function HomeScreen() {
                   onClick={() =>
                     window.Calendly.initPopupWidget({
                       url:
-                        "https://calendly.com/abstractionparis/atelierdecouverte",
+                        "https://calendly.com/abstractionparis/atelierdecouverte?background_color=fffff2&text_color=1b1a18&primary_color=1b1a18",
                     })
                   }
                 >
@@ -160,10 +160,11 @@ function HomeScreen() {
               <span class="number">03. </span>
               <span class="title">Rester curieux</span>
               <p class="corpstext">
-                Gardez le contact avec l’équipe d’Abstraction Paris pour
-                recevoir des informations sur les matières premières, au fil des
-                récoltes, sur le lancement de nos parfums et des évènements dans
-                la boutique <br></br>
+                Vous aimeriez en savoir plus? Gardez le contact avec l’équipe d’
+                <strong>Abstraction Paris</strong> pour recevoir chaque mois des
+                informations, sur les matières premières au fil des récoltes,
+                sur le lancement de nos parfums et des évènements dans la
+                boutique.<br></br>
                 <br></br>A bientôt !
               </p>
               <CardFooter style={button}>
