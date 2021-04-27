@@ -42,6 +42,7 @@ function HomeScreen() {
     justifyContent: "flex-end",
     backgroundColor: "#1b1a18",
     border: "#1b1a18",
+    position: "sticky",
   };
   var cardbody = {
     paddingBottom: 0,
@@ -79,21 +80,21 @@ function HomeScreen() {
                 une introduction aux matières premières qui composent la palette
                 du parfumeur{" "}
               </p>
+              <CardFooter style={button}>
+                <Link
+                  class="calendlybutton"
+                  href="#"
+                  onClick={() =>
+                    window.Calendly.initPopupWidget({
+                      url:
+                        "https://calendly.com/abstractionparis/atelierdecouverte",
+                    })
+                  }
+                >
+                  Réserver
+                </Link>
+              </CardFooter>
             </CardBody>
-            <CardFooter style={button}>
-              <Link
-                class="calendlybutton"
-                href="#"
-                onClick={() =>
-                  window.Calendly.initPopupWidget({
-                    url:
-                      "https://calendly.com/abstractionparis/atelierdecouverte",
-                  })
-                }
-              >
-                Réserver
-              </Link>
-            </CardFooter>
           </Card>
         </Col>
         <Col xs="11" lg="5" xl="4">
@@ -109,16 +110,16 @@ function HomeScreen() {
               <p class="simpletexttransparent">.</p>
               <p class="simpletext">contact@abstractionparis.com</p>
               <p class="simpletext">@abstractionparis</p>
+              <CardFooter style={button}>
+                <button
+                  onClick={onOpenModal}
+                  class="calendlybutton"
+                  style={{ marginTop: 0, border: "none" }}
+                >
+                  Nous trouver
+                </button>
+              </CardFooter>
             </CardBody>
-            <CardFooter style={button}>
-              <button
-                onClick={onOpenModal}
-                class="calendlybutton"
-                style={{ marginTop: 0, border: "none" }}
-              >
-                Nous trouver
-              </button>
-            </CardFooter>
           </Card>
         </Col>
 
@@ -165,20 +166,22 @@ function HomeScreen() {
                 la boutique <br></br>
                 <br></br>A bientôt !
               </p>
+              <CardFooter style={button}>
+                <button
+                  class="calendlybutton"
+                  style={{ marginTop: 0, border: "none" }}
+                >
+                  Garder le contact
+                </button>
+              </CardFooter>
             </CardBody>
-            <CardFooter style={button}>
-              <button
-                class="calendlybutton"
-                style={{ marginTop: 0, border: "none" }}
-              >
-                Garder le contact
-              </button>
-            </CardFooter>
           </Card>
         </Col>
       </Row>
       <Row>
-        <p class="corpstext">22 rue Houdon, 75018 Paris</p>
+        <p class="corpstext" style={{ marginTop: 0 }}>
+          22 rue Houdon, 75018 Paris
+        </p>
       </Row>
     </Container>
   );
