@@ -104,6 +104,16 @@
   margin-top: 2vh;
 }
 
+.corpstext2 {
+  font-family: Avenir Next Condensed;
+  color: #fffef2;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: justify;
+  letter-spacing: 0.04em;
+}
+
 .simpletext {
   font-family: Avenir Next Condensed;
   font-style: normal;
@@ -176,7 +186,7 @@
 }
 
 .logo3 {
-  margin-top: 5vh;
+  margin-top: 3vh;
   margin-bottom: 8vh;
   z-index: 10;
 }

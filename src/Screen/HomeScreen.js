@@ -32,10 +32,11 @@ function HomeScreen() {
     backgroundColor: "#1b1a18",
   };
   var card = {
-    height: "70vh",
+    height: "72vh",
     color: "#fffef2",
     border: "none",
     backgroundColor: "#1b1a18",
+    padding: 0,
   };
   var button = {
     display: "flex",
@@ -46,7 +47,7 @@ function HomeScreen() {
   };
   var cardbody = {
     paddingBottom: 0,
-    height: "50vh",
+    //height: "50vh",
   };
 
   const skater = new Icon({
