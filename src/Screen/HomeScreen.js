@@ -122,7 +122,7 @@ function HomeScreen() {
                 <strong>Abstraction Paris</strong>
               </p>
               <p class="simpletext">22 rue Houdon, 75018 Paris</p>
-              <p class="simpletext">Tél.: 06.13.05.14.67</p>
+              <p class="simpletext">Tél.: 06.71.59.17.33</p>
               <p class="simpletexttransparent">.</p>
               <p class="simpletext">
                 <a class="lien" href="mailto:contact@abstractionparis.com">
