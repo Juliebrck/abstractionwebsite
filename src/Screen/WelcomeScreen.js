@@ -1,9 +1,19 @@
+import React, { useState, useEffect } from "react";
 import "../App.css";
 import { connect } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { Container } from "reactstrap";
 
 function WelcomeScreen(props) {
+  useEffect(() => {
+    let timeOut = setTimeout(function () {
+      props.onIncreaseClick();
+    }, 3000);
+    return () => {
+      clearTimeout(timeOut);
+    };
+  }, []);
+
   let history = useHistory();
 
   const redirect = () => {
