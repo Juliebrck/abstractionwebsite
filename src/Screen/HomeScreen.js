@@ -77,8 +77,7 @@ function HomeScreen() {
                 href="#"
                 onClick={() =>
                   window.Calendly.initPopupWidget({
-                    url:
-                      "https://calendly.com/abstractionparis/atelierdecouverte?background_color=fffff2&text_color=1b1a18&primary_color=1b1a18",
+                    url: "https://calendly.com/abstractionparis/atelierdecouverte?background_color=fffff2&text_color=1b1a18&primary_color=1b1a18",
                   })
                 }
               >
@@ -98,8 +97,7 @@ function HomeScreen() {
                   href="#"
                   onClick={() =>
                     window.Calendly.initPopupWidget({
-                      url:
-                        "https://calendly.com/abstractionparis/atelierdecouverte?background_color=fffff2&text_color=1b1a18&primary_color=1b1a18",
+                      url: "https://calendly.com/abstractionparis/atelier-decouverte-2h-abstraction-paris-clone?background_color=fffff2&text_color=1b1a18&primary_color=1b1a18",
                     })
                   }
                 >
