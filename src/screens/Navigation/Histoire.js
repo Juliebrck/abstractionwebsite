@@ -6,6 +6,8 @@ import { Container, Col, Row } from "reactstrap";
 import { Link } from 'react-router-dom';
 import { MenuOutlined, UserOutlined } from '@ant-design/icons';
 import Layout from "antd/lib/layout/layout";
+import Header from "../Header";
+import Footer from "../Footer.js";
 //import { Col } from 'antd'
 
 
@@ -20,16 +22,9 @@ function Histoire(props) {
     return (
         <Layout fluid style={styles.container}>
             <div style={{ height: "20vh", width: "1px", backgroundColor: "#1b1a18", marginLeft: "30vw", marginTop: "85vh", position: "absolute" }}></div>
-            <img style={styles.ginkoright} classname="ginkoright" width="340px" src="./ginko.png" alt="ginko" />
+            <img style={styles.ginkoright} width="340px" src="./ginko.png" alt="ginko" />
             <Row>
-                <div style={{ width: "100vw", height: "8vh", marginTop: "20px", marginLeft: "40px", display: "flex", justifyContent: "flex-start", alignItems: "center" }}>
-                    <Link to="/" ><img className="logomenu" width="70px" src="./logominres.png" alt="logo abstraction" /></Link>
-                    <div>
-                        <h1 style={styles.pagetitle}>HISTOIRE</h1>
-                        <div style={{ backgroundColor: "black", height: "1px", width: "200px" }}></div>
-                    </div>
-
-                </div>
+                <Header title={"HISTOIRE"} />
             </Row>
             <Row>
                 <div style={{ width: "100vw", height: "88vh", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
@@ -56,10 +51,7 @@ function Histoire(props) {
                         </div>
                     </div>
                 </div>
-                <div style={styles.footer}>
-                    <h2 style={styles.text2}>22 rue Houdon 75018 Paris </h2>
-                    <span style={styles.text3}>Copyright © 2021 ABSTRACTION Paris. All rights reserved.</span>
-                </div>
+                <Footer />
             </Row>
         </Layout>
     );
@@ -98,38 +90,18 @@ const styles = {
         lineHeight: "30px",
 
     },
-    text2: {
-        fontSize: '14px'
-    },
-    text3: {
-        fontSize: '11px'
-    },
     textmenu: {
         fontSize: '14px',
         marginBottom: "30px",
         marginTop: "30px"
 
     },
-    pagetitle: {
-        marginLeft: "10px",
-        fontFamily: "nevoclara"
-    },
     ginkoright: {
         marginLeft: "80vw",
         marginTop: "90vh",
         position: "absolute",
         zIndex: 2,
-        opacity: 0.6
-    },
-    footer: {
-        width: "100vw",
-        height: "10vh",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "#1b1a18",
-        color: "#fffef2",
-        fontFamily: "beau",
+        opacity: 0.6,
+        transform: "rotate(-90deg)"
     }
 }
