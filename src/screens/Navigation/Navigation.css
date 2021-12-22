@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  outline: 0;
+  background-color: #fffef2;
+}
+
+.ginkoright {
+  transform: rotate(-90deg);
+}

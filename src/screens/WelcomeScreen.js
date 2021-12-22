@@ -2,20 +2,11 @@ import React, { useState, useEffect } from "react";
 import "../App.css";
 import { connect } from "react-redux";
 import { useHistory } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import { Container, Col } from "reactstrap";
 import { MenuOutlined, UserOutlined } from '@ant-design/icons';
-//import { Col } from 'antd'
-
 
 function WelcomeScreen(props) {
-  /* useEffect(() => {
-    let timeOut = setTimeout(function () {
-      props.onIncreaseClick();
-    }, 3000);
-    return () => {
-      clearTimeout(timeOut);
-    };
-  }, []); */
 
   let history = useHistory();
 
@@ -31,20 +22,20 @@ function WelcomeScreen(props) {
       </div>
       <div style={{ height: '80vh', width: '100vw', display: "flex", justifyContent: "space-around", alignItems: "center" }}>
         <Col className="d-none d-md-block" style={{ width: '30vw' }}>
-          <h2 style={styles.textmenu}>COLLECTION CLASSIQUE</h2>
-          <h2 style={styles.textmenu}>COLLECTION MILLÉSIMÉE</h2>
-          <h2 style={styles.textmenu}>MATIÈRES PREMIÈRES</h2>
-          <h2 style={styles.textmenu}>ATELIERS</h2>
+          <Link to="/collectionclassique" style={styles.linkmenu}><h2 style={styles.textmenu}>COLLECTION CLASSIQUE</h2></Link>
+          <Link to="/collectionmillesimee" style={styles.linkmenu}><h2 style={styles.textmenu}>COLLECTION MILLÉSIMÉE</h2></Link>
+          <Link to="/matierespremieres" style={styles.linkmenu}><h2 style={styles.textmenu}>MATIÈRES PREMIÈRES</h2></Link>
+          <Link to="/ateliers" style={styles.linkmenu}><h2 style={styles.textmenu}>ATELIERS</h2></Link>
         </Col>
         <div style={{ width: '40vw', display: "flex", justifyContent: "center", alignItems: "center" }}>
           <img onClick={() => redirect()} className="logo1" width="30%" src="./logominres.png" alt="logo abstraction" />
           <img className="logo2" width="20%" src="./titremastic.png" alt="logo abstraction" />
         </div>
         <Col className="d-none d-md-block" style={{ width: '30vw' }}>
-          <h2 style={styles.textmenu}>HISTOIRE</h2>
-          <h2 style={styles.textmenu}>PARFUMEURS</h2>
-          <h2 style={styles.textmenu}>PARTENAIRES</h2>
-          <h2 style={styles.textmenu}>CONTACTS</h2>
+          <Link to="/histoire" style={styles.linkmenu}><h2 style={styles.textmenu}>HISTOIRE</h2></Link>
+          <Link to="/parfumeurs" style={styles.linkmenu}><h2 style={styles.textmenu}>PARFUMEURS</h2></Link>
+          <Link to="/partenaires" style={styles.linkmenu}><h2 style={styles.textmenu}>PARTENAIRES</h2></Link>
+          <Link to="/contact" style={styles.linkmenu}><h2 style={styles.textmenu}>CONTACT</h2></Link>
         </Col>
 
       </div>
@@ -72,9 +63,12 @@ const styles = {
     fontSize: '11px'
   },
   textmenu: {
-    fontSize: '14px',
+    fontSize: '16px',
     marginBottom: "30px",
-    marginTop: "30px"
-
+    marginTop: "30px",
   },
+  linkmenu: {
+    textDecoration: 'none',
+    color: "#fffef2",
+  }
 }
