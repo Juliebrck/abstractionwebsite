@@ -10,6 +10,7 @@ import Histoire from "./screens/Navigation/Histoire.js";
 import Matierespremieres from "./screens/Navigation/Matierespremieres.js";
 import Parfumeurs from "./screens/Navigation/Parfumeurs.js";
 import Partenaires from "./screens/Navigation/Partenaires.js";
+import Maintenance from "./screens/Maintenance";
 
 import { Provider } from "react-redux";
 import { createStore, combineReducers } from "redux";
@@ -23,7 +24,8 @@ function App() {
     <Provider store={store}>
       <Router>
         <Switch>
-          <Route component={WelcomeScreen} path="/" exact />
+          <Route component={Maintenance} path="/" exact />
+          <Route component={WelcomeScreen} path="/welcome" exact />
           <Route component={Ateliers} path='/ateliers' exact />
           <Route component={Collectionclassique} path='/collectionclassique' exact />
           <Route component={Collectionmillesimee} path='/collectionmillesimee' exact />

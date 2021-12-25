@@ -219,7 +219,7 @@
   font-style: italic;
 }
 
-@media screen and (max-width: 1100px) {
+/* @media screen and (max-width: 1100px) {
   .logo3 {
     margin-top: 50px;
     margin-bottom: -10px;
@@ -237,4 +237,4 @@
     max-width: 90vw;
     width: 90vw;
   }
-}
+} */

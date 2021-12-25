@@ -5,7 +5,7 @@ export default function Header({ title }) {
 
     return (
         <div style={styles.headercontainer}>
-            <Link to="/" ><img className="logomenu" width="70px" src="./logominres.png" alt="logo abstraction" /></Link>
+            <Link to="/welcome" ><img className="logomenu" width="70px" src="./logominres.png" alt="logo abstraction" /></Link>
             <div>
                 <h1 style={styles.pagetitle}>{title}</h1>
                 <div style={{ backgroundColor: "black", height: "1px", width: "200px" }}></div>
