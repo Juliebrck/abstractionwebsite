@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Navigation.css";
 import { connect } from "react-redux";
-import { useHistory } from "react-router-dom";
 import { Container, Col, Row } from "reactstrap";
 import { Link } from 'react-router-dom';
 import { MenuOutlined, UserOutlined } from '@ant-design/icons';
