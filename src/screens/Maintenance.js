@@ -1,16 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { connect } from "react-redux";
-import { useHistory } from "react-router-dom";
-import { Container, Col, Row } from "reactstrap";
-import { Link } from 'react-router-dom';
-import { Icon } from "leaflet";
-
 import Layout from "antd/lib/layout/layout";
 import Footer from "./Footer.js";
-//import { Col } from 'antd'
 
 
-function Maintenance(props) {
+function Maintenance() {
 
     return (
         <Layout fluid style={styles.container}>
@@ -26,15 +20,8 @@ function Maintenance(props) {
     );
 }
 
-function mapDispatchToProps(dispatch) {
-    return {
-        onIncreaseClick: function () {
-            dispatch({ type: "increase" });
-        },
-    };
-}
 
-export default connect(null, mapDispatchToProps)(Maintenance);
+export default (Maintenance);
 
 const styles = {
     container: {
