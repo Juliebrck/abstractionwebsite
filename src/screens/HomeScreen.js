@@ -91,6 +91,9 @@ function HomeScreen() {
                 une introduction aux matières premières qui composent la palette
                 du parfumeur.{" "}
               </p>
+              <p class="corpstext">
+                Abstraction Paris vous propose de découvrir l'envers du décor de l'industrie de la parfumerie au travers de ces matières premières. L'atelier passe en revue les ingrédients iconiques de la palette du parfumeur, les fournisseurs qui se cachent derrière, les méthodes de fabrication et les régions du monde d'où ils proviennent.{" "}
+              </p>
               <CardFooter style={button}>
                 <Link
                   class="calendlybutton"

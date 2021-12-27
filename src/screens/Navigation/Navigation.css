@@ -10,3 +10,7 @@ body {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
+
+.perfumesquare:hover {
+  opacity: 0.8;
+}

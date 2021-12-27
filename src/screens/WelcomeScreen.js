@@ -18,7 +18,7 @@ function WelcomeScreen(props) {
     <Container fluid className="App" style={{ paddingLeft: "0px", paddingRight: "0px", marginLeft: 0, marginRight: 0, }}>
       <div style={{ height: '10vh', width: '100vw', padding: "25px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <MenuOutlined style={{ color: '#fffef2', fontSize: 25 }} />
-        <UserOutlined style={{ color: '#fffef2', fontSize: 30 }} />
+        <Link to="/signin" style={styles.linkmenu}><UserOutlined style={{ color: '#fffef2', fontSize: 30 }} /></Link>
       </div>
       <div style={{ height: '80vh', width: '100vw', display: "flex", justifyContent: "space-around", alignItems: "center" }}>
         <Col className="d-none d-md-block" style={{ width: '30vw' }}>

@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen";
 import WelcomeScreen from "./screens/WelcomeScreen";
+import Signin from "./screens/Signin";
 import Ateliers from "./screens/Navigation/Ateliers.js";
 import Collectionclassique from "./screens/Navigation/Collectionclassique.js";
 import Collectionmillesimee from "./screens/Navigation/Collectionmillesimee.js";
@@ -34,6 +35,7 @@ function App() {
           <Route component={Matierespremieres} path='/matierespremieres' exact />
           <Route component={Parfumeurs} path='/parfumeurs' exact />
           <Route component={Partenaires} path='/partenaires' exact />
+          <Route component={Signin} path='/signin' exact />
 
           <Route path="/bienvenue" component={HomeScreen}></Route>
         </Switch>
