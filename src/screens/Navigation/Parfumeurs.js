@@ -22,9 +22,11 @@ function Parfumeurs(props) {
             <div style={{ height: "33vh", width: "1px", backgroundColor: "#1b1a18", marginLeft: "30vw", marginTop: "279vh", position: "absolute" }}></div>
             <div style={{ height: "33vh", width: "1px", backgroundColor: "#1b1a18", marginLeft: "70vw", marginTop: "356vh", position: "absolute" }}></div>
 
+            <img style={styles.ginkoright} width="340px" src="./ginko.png" alt="ginko" />
+            <img style={styles.ginkoleft} width="340px" src="./ginko.png" alt="ginko" />
+            <img style={styles.ginkobias} width="340px" src="./ginko.png" alt="ginko" />
 
-            {/*             <img style={styles.ginkoright} width="340px" src="./ginko.png" alt="ginko" />
- */}            <Row style={{ width: "100vw" }}>
+            <Row style={{ width: "100vw" }}>
                 <Header title={"PARFUMEURS"} />
             </Row >
 
@@ -147,11 +149,31 @@ const styles = {
 
     },
     ginkoright: {
+        position: "absolute",
         marginLeft: "80vw",
-        marginTop: "90vh",
+        marginTop: "40vh",
         position: "absolute",
         zIndex: 2,
         opacity: 0.6,
         transform: "rotate(-90deg)"
-    }
+    },
+    ginkoleft: {
+        position: "absolute",
+        marginLeft: "-5vw",
+        marginTop: "160vh",
+        position: "absolute",
+        zIndex: 2,
+        opacity: 0.6,
+        transform: "rotate(90deg)"
+    },
+    ginkobias: {
+        position: "absolute",
+        marginLeft: "80vw",
+        marginTop: "265vh",
+        position: "absolute",
+        zIndex: 2,
+        opacity: 0.6,
+        transform: "rotate(-150deg)"
+    },
+
 }

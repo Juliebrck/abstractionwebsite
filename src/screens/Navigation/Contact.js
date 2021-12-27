@@ -25,10 +25,10 @@ function Contact(props) {
     return (
         <Layout fluid style={styles.container}>
             <img style={styles.ginkoright} width="340px" src="./ginko.png" alt="ginko" />
-            <Row>
+            <Row style={{ width: "100vw" }}>
                 <Header title={"CONTACT"} />
             </Row>
-            <Row>
+            <Row style={{ width: "100vw" }}>
                 <div style={{ width: "100vw", height: "80vh", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
                     <div style={{ ...styles.textContainer, height: "30vh", width: "80vw", zIndex: 1 }}>
                         <p style={{ textAlign: "center", lineHeight: "18px", fontWeight: 600 }}>
