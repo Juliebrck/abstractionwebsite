@@ -18,8 +18,6 @@ function Collectionclassique() {
         setPerfumeName(name)
     };
 
-    console.log(isClicked)
-
     return (
         isClicked ? <Ficheparfum name={perfumeName} /> :
 
@@ -31,10 +29,10 @@ function Collectionclassique() {
                 <Row style={{ width: "100vw" }}>
                     <div style={{ width: "70vw", height: "79vh", display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", flexWrap: "wrap" }}>
                         <div onClick={() => { perfumeInfo("BLEU ROUGE") }} className="perfumesquare" style={styles.perfumebutton}>BLEU ROUGE</div>
-                        <div className="perfumesquare" style={styles.perfumebutton}>SLOW BURN DESIRE</div>
-                        <div className="perfumesquare" style={styles.perfumebutton}>WOMEN AND LEAVES</div>
-                        <div className="perfumesquare" style={styles.perfumebutton}>WHITE SPIRIT</div>
-                        <div className="perfumesquare" style={styles.perfumebutton}>SOMBRES MARGUERITES</div>
+                        <div onClick={() => { perfumeInfo("SLOW BURN DESIRE") }} className="perfumesquare" style={styles.perfumebutton}>SLOW BURN DESIRE</div>
+                        <div onClick={() => { perfumeInfo("WOMEN AND LEAVES") }} className="perfumesquare" style={styles.perfumebutton}>WOMEN AND LEAVES</div>
+                        <div onClick={() => { perfumeInfo("WHITE SPIRIT") }} className="perfumesquare" style={styles.perfumebutton}>WHITE SPIRIT</div>
+                        <div onClick={() => { perfumeInfo("SOMBRES MARGUERITES") }} className="perfumesquare" style={styles.perfumebutton}>SOMBRES MARGUERITES</div>
                         <div style={styles.greyContainer}>A chaque parfumeur son couple de parfums...</div>
                     </div>
                 </Row>

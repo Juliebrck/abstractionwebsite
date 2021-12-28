@@ -6,29 +6,43 @@ import { Link } from 'react-router-dom';
 import Layout from "antd/lib/layout/layout";
 import Header from "../Header";
 import Footer from "../Footer.js";
+import Ficheparfum from "./Ficheparfum";
+
 
 function Collectionmillesimee() {
 
+    const [isClicked, setIsClicked] = useState(false);
+    const [perfumeName, setPerfumeName] = useState("");
+
+    const perfumeInfo = (name) => {
+        setIsClicked(true)
+        setPerfumeName(name)
+    };
+
     return (
-        <Layout fluid style={styles.container}>
-            <img style={styles.ginkobias} width="340px" src="./ginko.png" alt="ginko" />
-            <Row style={{ width: "100vw" }}>
-                <Header title={"MILLÉSIMÉS"} />
-            </Row>
-            <Row style={{ width: "100vw" }}>
-                <div style={{ width: "70vw", height: "79vh", display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", flexWrap: "wrap" }}>
-                    <div className="perfumesquare" style={styles.perfumebutton}>BLEU ROUGE</div>
-                    <div className="perfumesquare" style={styles.perfumebutton}>SLOW BURN DESIRE</div>
-                    <div className="perfumesquare" style={styles.perfumebutton}>WOMEN AND LEAVES</div>
-                    <div className="perfumesquare" style={styles.perfumebutton}>WHITE SPIRIT</div>
-                    <div className="perfumesquare" style={styles.perfumebutton}>SOMBRES MARGUERITES</div>
-                    <div style={styles.greyContainer}>A chaque parfumeur son couple de parfums...</div>
-                </div>
-            </Row>
 
-            <Footer />
+        isClicked ? <Ficheparfum name={perfumeName} /> :
 
-        </Layout>
+            <Layout fluid style={styles.container}>
+                <img style={styles.ginkobias} width="340px" src="./ginko.png" alt="ginko" />
+                <Row style={{ width: "100vw" }}>
+                    <Header title={"MILLÉSIMÉS"} />
+                </Row>
+                <Row style={{ width: "100vw" }}>
+                    <div style={{ width: "70vw", height: "79vh", display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", flexWrap: "wrap" }}>
+                        <div onClick={() => { perfumeInfo("BLEU ROUGE") }} className="perfumesquare" style={styles.perfumebutton}>BLEU ROUGE</div>
+                        <div onClick={() => { perfumeInfo("SLOW BURN DESIRE") }} className="perfumesquare" style={styles.perfumebutton}>SLOW BURN DESIRE</div>
+                        <div onClick={() => { perfumeInfo("WOMEN AND LEAVES") }} className="perfumesquare" style={styles.perfumebutton}>WOMEN AND LEAVES</div>
+                        <div onClick={() => { perfumeInfo("WHITE SPIRIT") }} className="perfumesquare" style={styles.perfumebutton}>WHITE SPIRIT</div>
+                        <div onClick={() => { perfumeInfo("SOMBRES MARGUERITES") }} className="perfumesquare" style={styles.perfumebutton}>SOMBRES MARGUERITES</div>
+                        <div style={styles.greyContainer}>A chaque parfumeur son couple de parfums...</div>
+                    </div>
+                </Row>
+
+                <Footer />
+
+            </Layout>
+
     );
 }
 
