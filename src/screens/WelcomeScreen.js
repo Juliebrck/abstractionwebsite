@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import { Container, Col, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from "reactstrap";
 import { MenuOutlined, UserOutlined } from '@ant-design/icons';
 
-
 function WelcomeScreen(props) {
 
   const [dropdown, setDropdown] = useState(false);

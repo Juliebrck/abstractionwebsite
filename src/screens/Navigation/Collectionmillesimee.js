@@ -17,13 +17,12 @@ function Collectionmillesimee() {
             </Row>
             <Row style={{ width: "100vw" }}>
                 <div style={{ width: "70vw", height: "79vh", display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", flexWrap: "wrap" }}>
-                    <div className="perfumesquare" style={{ height: "200px", width: "200px", backgroundColor: "rgba(27, 26, 24, 0.4)", borderRadius: 45, border: "0.5px black solid", margin: "15px 35px 15px 35px", color: "#1b1a18", fontFamily: "beau", display: "flex", justifyContent: "center", alignItems: "center", }}>BLEU ROUGE</div>
-                    <div className="perfumesquare" style={{ height: "200px", width: "200px", backgroundColor: "rgba(27, 26, 24, 0.4)", borderRadius: 45, border: "0.5px black solid", margin: "15px 35px 15px 35px", color: "#1b1a18", fontFamily: "beau", display: "flex", justifyContent: "center", alignItems: "center", }}>SLOW BURN DESIRE</div>
-                    <div className="perfumesquare" style={{ height: "200px", width: "200px", backgroundColor: "rgba(27, 26, 24, 0.4)", borderRadius: 45, border: "0.5px black solid", margin: "15px 35px 15px 35px", color: "#1b1a18", fontFamily: "beau", display: "flex", justifyContent: "center", alignItems: "center", }}>WOMEN AND LEAVES</div>
-                    <div className="perfumesquare" style={{ height: "200px", width: "200px", backgroundColor: "rgba(27, 26, 24, 0.4)", borderRadius: 45, border: "0.5px black solid", margin: "15px 35px 15px 35px", color: "#1b1a18", fontFamily: "beau", display: "flex", justifyContent: "center", alignItems: "center", }}>WHITE SPIRIT</div>
-                    <div className="perfumesquare" style={{ height: "200px", width: "200px", backgroundColor: "rgba(27, 26, 24, 0.4)", borderRadius: 45, border: "0.5px black solid", margin: "15px 35px 15px 35px", color: "#1b1a18", fontFamily: "beau", display: "flex", justifyContent: "center", alignItems: "center", }}>SOMBRES MARGUERITES</div>
-                    <div style={{ height: "200px", width: "200px", backgroundColor: "rgba(27, 26, 24, 0.4)", backgroundColor: "#1b1a18", backgroundSize: "contain", borderRadius: 25, border: "0.5px black solid", margin: "15px 35px 15px 35px", color: "#fffef2", fontFamily: "beau", display: "flex", justifyContent: "center", alignItems: "center", paddingLeft: "15px" }}>A chaque parfumeur son couple de parfums...</div>
-
+                    <div className="perfumesquare" style={styles.perfumebutton}>BLEU ROUGE</div>
+                    <div className="perfumesquare" style={styles.perfumebutton}>SLOW BURN DESIRE</div>
+                    <div className="perfumesquare" style={styles.perfumebutton}>WOMEN AND LEAVES</div>
+                    <div className="perfumesquare" style={styles.perfumebutton}>WHITE SPIRIT</div>
+                    <div className="perfumesquare" style={styles.perfumebutton}>SOMBRES MARGUERITES</div>
+                    <div style={styles.greyContainer}>A chaque parfumeur son couple de parfums...</div>
                 </div>
             </Row>
 
@@ -60,47 +59,33 @@ const styles = {
         paddingLeft: "40px"
 
     },
-    textmenu: {
-        fontSize: '14px',
-        marginBottom: "30px",
-        marginTop: "30px"
-
-    },
-    sectionTitle: {
-        width: "15vw",
-        textAlign: "center",
-        position: "absolute",
-        marginTop: "-3vh",
-        fontSize: "24px",
-        fontFamily: "beau",
-        zIndex: 1,
-        backgroundColor: "#fffef2",
-
-    },
-    ellipsisabove: {
-        height: "240px",
-        width: "240px",
-        borderRadius: 150,
-        backgroundColor: "#1b1a18",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        color: "#fffef2",
-        fontFamily: "beau",
-        fontSize: 20,
-    },
-    ellipsisunder: {
-        height: "240px",
-        width: "240px",
-        borderRadius: 150,
-        backgroundColor: "#fffef2",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
+    perfumebutton: {
+        height: "200px",
+        width: "200px",
+        backgroundColor: "rgba(27, 26, 24, 0.4)",
+        borderRadius: 45,
+        border: "0.5px black solid",
+        margin: "15px 35px 15px 35px",
         color: "#1b1a18",
         fontFamily: "beau",
-        fontSize: 20,
-        border: "0.5px black solid"
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    greyContainer: {
+        height: "200px",
+        width: "200px",
+        backgroundColor: "rgba(27, 26, 24, 0.4)",
+        backgroundColor: "#1b1a18",
+        borderRadius: 25,
+        border: "0.5px black solid",
+        margin: "15px 35px 15px 35px",
+        color: "#fffef2",
+        fontFamily: "beau",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        paddingLeft: "15px",
     },
     ginkobias: {
         position: "absolute",

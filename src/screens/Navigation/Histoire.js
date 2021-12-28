@@ -13,11 +13,6 @@ import Footer from "../Footer.js";
 
 function Histoire(props) {
 
-    let history = useHistory();
-
-    const redirect = () => {
-        history.push("/bienvenue");
-    };
 
     return (
         <Layout fluid style={styles.container}>
@@ -58,15 +53,7 @@ function Histoire(props) {
     );
 }
 
-function mapDispatchToProps(dispatch) {
-    return {
-        onIncreaseClick: function () {
-            dispatch({ type: "increase" });
-        },
-    };
-}
-
-export default connect(null, mapDispatchToProps)(Histoire);
+export default connect(null, null)(Histoire);
 
 const styles = {
     container: {

@@ -11,7 +11,8 @@ import Histoire from "./screens/Navigation/Histoire.js";
 import Matierespremieres from "./screens/Navigation/Matierespremieres.js";
 import Parfumeurs from "./screens/Navigation/Parfumeurs.js";
 import Partenaires from "./screens/Navigation/Partenaires.js";
-import Maintenance from "./screens/Maintenance";
+import Maintenance from "./screens/Maintenance.js";
+import Ficheparfums from "./screens/Navigation/Ficheparfum.js";
 
 import { Provider } from "react-redux";
 import { createStore, combineReducers } from "redux";
@@ -36,6 +37,7 @@ function App() {
           <Route component={Parfumeurs} path='/parfumeurs' exact />
           <Route component={Partenaires} path='/partenaires' exact />
           <Route component={Signin} path='/signin' exact />
+          <Route component={Ficheparfums} path='/collectionclassique/ficheparfum' exact />
 
           <Route path="/bienvenue" component={HomeScreen}></Route>
         </Switch>
